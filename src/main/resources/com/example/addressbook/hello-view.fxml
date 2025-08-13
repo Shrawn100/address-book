@@ -19,10 +19,11 @@
            wrapText="true"/>
 
     <TextArea fx:id="termsAndConditions" wrapText="true" editable="false"/>
-    <CheckBox fx:id="agreeCheckBox" text="I agree to the terms and conditions."/>
+    <CheckBox fx:id="agreeCheckBox" text="I agree to the terms and conditions."
+              onAction="#onAgreeCheckBoxClick"/>
     <HBox alignment="BOTTOM_RIGHT" spacing="10.0">
         <Button text="Cancel"/>
-        <Button fx:id="nextButton" text="Next" disable="true"/>
+        <Button fx:id="nextButton" text="Next" disable="true" onAction="#onNextButtonClick"/>
     </HBox>
 
     <Label fx:id="welcomeText"/>
